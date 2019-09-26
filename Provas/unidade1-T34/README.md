@@ -24,16 +24,16 @@ Escreva um programa que lerá um mapa 6x6 de caracteres, no seguinte
 formato:
 
 v * * * < *
-* * * * * *
-* ^ * * > *
-* * * * * *
-* * * * ^ *
-* * * * * *
+\* * * * * *
+\* ^ * * > *
+\* * * * * *
+\* * * * ^ *
+\* * * * * *
 
 Onde:
 
-* - locais livres para ele andar
-> - um soldado olhando para o leste
+\* - locais livres para ele andar
+\> - um soldado olhando para o leste
 < - um soldado olhando para o oeste^ - um soldado olhando para o norte
 v - um soldado olhando para o sul
 
