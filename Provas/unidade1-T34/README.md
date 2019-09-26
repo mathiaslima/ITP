@@ -24,25 +24,39 @@ Escreva um programa que lerá um mapa 6x6 de caracteres, no seguinte
 formato:
 
 v * * * < *
+
 \* * * * * *
+
 \* ^ * * > *
+
 \* * * * * *
+
 \* * * * ^ *
+
 \* * * * * *
+
 
 Onde:
 
+
 \* - locais livres para ele andar
+
 \> - um soldado olhando para o leste
+
 < - um soldado olhando para o oeste^ - um soldado olhando para o norte
+
 v - um soldado olhando para o sul
+
 
 Após essa leitura, seu programa lerá um inteiro M, que indica a quantidade
 de movimentos que Lagartixa fará na simulação, seguido de M letras:
 
 D - anda para o leste
+
 E - anda para o oeste
+
 C - anda para o norte
+
 B - anda para o sul
 
 Seu programa deve imprimir as seguintes mensagens de acordo com essas

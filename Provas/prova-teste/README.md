@@ -21,13 +21,21 @@ subterrâneos, onde nem sempre é garantido uma saída! Sua missão é ajudar o 
 um programa que, dado um labirinto, verifique se ele consegue escapar ou se ficará para
 sempre perdido na escuridão...
 Seu programa lerá um labirinto 5x5, representado por um conjunto de caracteres:
+
 \* ​ - representa uma parede
+
 I -​ ponto inicial da trajetória de Indiana
+
 F​ - destino final com a saída do labirinto
+
 \>​ - caminho para o leste
+
 <​ - caminho para o oeste
+
 ^ ​ - caminho para o norte
+
 v ​ - caminho para o sul
+
 Se as setas de caminho levam Indiana Jones do ponto I até o F, seu programa deve
 imprimir a mensagem “Escapou em N passos”, onde N é a quantidade de movimentos que
 Indiana fez. Se o caminho não levar de I até F, então o programa deve imprimir “Lost in the
