@@ -28,21 +28,21 @@ Faça um programa para verificar se a Marinha vai precisar mandar suas
 frotas de combate ou não! Faça um programa que receberá um mapa no seguinte
 formato:
 
-- -​ - \*​ ​ * -​ - -
+\- -​ - \*​ ​ * -​ - -
 
-- \*​ ​ - -​ ​ - -​ ​ - -
+\- \*​ ​ - -​ ​ - -​ ​ - -
 
 \* -​ ​ - -​ ​ - \*​ ​ - -
 
-- -​ ​ * -​ ​ - -​ ​ - -
+\- -​ ​ * -​ ​ - -​ ​ - -
 
-- \*​ ​ - -​ ​ * -​ ​ - -
+\- \*​ ​ - -​ ​ * -​ ​ - -
 
-- -​ ​ - -​ ​ - -​ ​ - -
+\- -​ ​ - -​ ​ - -​ ​ - -
 
-- -​ ​ - -​ ​ - -​ - -
+\- -​ ​ - -​ ​ - -​ - -
 
-- -​ ​ - -​ ​ - -​ - -
+\- -​ ​ - -​ ​ - -​ - -
 
 Onde os traços ​ (-) ​ representam águas despovoadas ou com piratas normais,
 e os asteriscos ​ (\*) representam piratas Supernova. Seu programa deve verificar se,
