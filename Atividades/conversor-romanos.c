@@ -5,25 +5,11 @@ int main()
 	int n, c, d, u;
 
 	scanf("%d", &n);
-
-	if (n >= 100)
-	{
-		c = n / 100;
-		n = n % 100;
-		d = n / 10;
-		n = n % 10;
-		u = n;		
-	}
-	else if (n >= 10)
-	{
-		d = n / 10;
-		n = n % 10;
-		u = n;
-	}
-	else
-	{
-		u = n;
-	}
+	
+	c = n / 100;
+	n %= 100;
+	d = n / 10;
+	u = n % 10;		
 
 
 	switch(c)
