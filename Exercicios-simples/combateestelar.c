@@ -2,7 +2,6 @@
 
 void ataque(int* arm, int* esc, int* can, int* mis, char arma)
 {
-	int dif;
 
 	switch(arma)
 	{
@@ -10,12 +9,11 @@ void ataque(int* arm, int* esc, int* can, int* mis, char arma)
 			if (*can > 0) 
 			{
 				(*can)--;
-				if (*esc >= 10) *esc -= 10;
+				if (*esc > 0) *esc -= 10;
 				else
 				{
-					dif = 10 - *esc;
-					*esc = 0;
-					*arm -= dif;
+					*arm += *esc;
+					*arm -= 10;
 				}
 			}
 			else printf("Sem munição!\n");
@@ -52,19 +50,10 @@ int main()
 		scanf(" %c", &arma);
 		if (nave == 'E') ataque(&k_arm, &k_esc, &e_can, &e_mis, arma);	
 		else if (nave == 'K') ataque(&e_arm, &e_esc, &k_can, &k_mis, arma);
-		
-		if (e_arm <= 0)
-		{
-			printf("Klington vence!\n");
-			break;
-		}
-		else if (k_arm <= 0)
-		{
-			printf("Enterprise vence!\n");
-			break;
-		}
 	}
-	if (e_arm > 0 && k_arm > 0) printf("Empate!\n");
+	if (e_arm <= 0 && k_arm > 0) printf("Klington vence!\n");
+	else if (k_arm <= 0 && e_arm > 0) printf("Enterprise vence!\n");
+	else printf("Empate!\n");
 
 	return 0;
 }
