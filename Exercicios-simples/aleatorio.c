@@ -12,6 +12,6 @@ int main()
 	{
 		printf("%d\n", rand()%10+1);
 	}
-
+	#comment
 	return 0;
 }
