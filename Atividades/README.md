@@ -36,3 +36,8 @@ altura média dos lotes da cidade, encontra o maior valor de altura da cidade, r
 prédios, atualiza os valores de altura e média quando necessário, e finalmente, imprime as
 alturas restantes em ordem crescente.
 
+## criptografia
+Programa simples de criptografia por meio de manipulação de string.
+
+São feitas três passadas em todo o texto.
+Na primeira passada, somente caracteres que sejam letras minúsculas e maiúsculas devem ser deslocadas 3 posições para a direita, segundo a tabela ASCII. Na segunda passada, a linha deverá ser invertida. Na terceira e última passada, todo e qualquer caractere a partir da metade em diante (truncada) devem ser deslocados uma posição para a esquerda na tabela ASCII.
