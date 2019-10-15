@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <math.h>
 
 int calculaQtd(char* val)
 {
@@ -40,13 +39,8 @@ int calculaQtd(char* val)
 int main()
 {
 	int n, i, leds;
-	char* valor;
-	unsigned long long int tam;
-
-	tam = (int)pow(10, 100);
-
-	valor = malloc(tam * sizeof(char));
-	
+	char valor[102];
+		
 	scanf("%d", &n);
 
 	for (i = 0; i < n; ++i)
