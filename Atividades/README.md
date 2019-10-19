@@ -41,3 +41,20 @@ Programa simples de criptografia por meio de manipulação de string.
 
 São feitas três passadas em todo o texto.
 Na primeira passada, somente caracteres que sejam letras minúsculas e maiúsculas devem ser deslocadas 3 posições para a direita, segundo a tabela ASCII. Na segunda passada, a linha deverá ser invertida. Na terceira e última passada, todo e qualquer caractere a partir da metade em diante (truncada) devem ser deslocados uma posição para a esquerda na tabela ASCII.
+
+## RPG
+Recebe um arquivo com um conjunto de informações dos personagens e imprime:
+
+Quantos personagens: um inteiro com o valor total de personagens no
+arquivo
+
+Mais poderoso: imprimir o nome do personagem mais poderoso, com a
+soma total dos seus atributos
+
+Valor da sabedoria: imprimir um inteiro com a soma total dos atributos
+Sabedoria de todos os personagens
+
+Top atributos: imprimir para cada um dos atributos uma lista com os
+personagens que possuem o maior valor para o respectivo atributo. Caso
+exista mais de um personagem com o maior valor, imprimir todos. Deve ser
+feita uma lista para cada um dos seis atributos.
