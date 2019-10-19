@@ -4,38 +4,40 @@
 int transforma_string(char* A, char* B)
 {
 	int i, tam;
-	int cont = 0;
+	int qtd = 0;
 	tam = strlen(A);
 
 
 	for (i = 0; i < tam; ++i)
 	{
-		while(A[i] != B[i])
+		if (A[i] < B[i])
 		{
-			if (A[i] == 'z') A[i] = 'a';
-			else A[i] += 1;
-			cont++;
+			qtd += B[i] - A[i];
+			A[i] += qtd;
 		}
-
+		else if (B[i] < A[i])
+		{
+			qtd += B[i] - A[i] + 26;
+			A[i] += qtd;
+		}
 	}
 
-	return cont;
+	return qtd;
 }
 
 int main()
 {
-	char A[10000], B[10000];
+	char A[10002], B[10002];
 	int t, i, qtd;
 
 	scanf("%d", &t);
 
 	for (i = 0; i < t; ++i)
 	{
-		scanf(" %s %s", A, B);
-		qtd = transforma_string(A, B);
+		scanf(" %s %s", A, B); //Le as duas strings
+		qtd = transforma_string(A, B); //Faz a transformacao e retorna a quantidade de operacoes
 		printf("%d\n", qtd);
 	}
-
 
 	return 0;
 }
