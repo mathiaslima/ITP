@@ -1,0 +1,7 @@
+Senha do escudo: xatiado
+
+Quantidade de alvos: 4
+Localização do alvo 1: (1, 1)
+Localização do alvo 2: (1, 9)
+Localização do alvo 3: (5, 1)
+Localização do alvo 4: (5, 9)
